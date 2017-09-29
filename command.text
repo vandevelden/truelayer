@@ -1,0 +1,7 @@
+curl -X POST \
+     -d grant_type=authorization_code \
+     -d client_id=${client_id} \
+     -d client_secret=${client_secret} \
+     -d redirect_uri=${redirect_uri} \
+     -d code=${code} \
+https://auth.truelayer.com/connect/token
